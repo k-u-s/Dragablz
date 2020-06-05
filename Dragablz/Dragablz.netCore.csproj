@@ -1,0 +1,47 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+  <PropertyGroup>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <RootNamespace>Dragablz</RootNamespace>
+    <AssemblyName>Dragablz</AssemblyName>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <ProjectTypeGuids>{60dc8134-eba5-43b8-bcc9-bb4bc16c2548};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <AssemblyTitle>Dragablz</AssemblyTitle>
+    <Company>Mulholland Software Ltd/James Willock</Company>
+    <Product>Dragablz</Product>
+    <Description>Dragable and tearable tab control for WPF</Description>
+    <Copyright>Copyright 2014-18 James Willock/Mulholland Software Ltd</Copyright>
+    <Version>0.0.0.0</Version>
+    <AssemblyVersion>0.0.0.0</AssemblyVersion>
+    <FileVersion>0.0.0.0</FileVersion>
+    <Authors>James Willock</Authors>
+    <PackageIconUrl>https://raw.githubusercontent.com/ButchersBoy/Dragablz/master/Resources/D32.png</PackageIconUrl>
+    <PackageId>Dragablz</PackageId>
+    <PackageLicenseUrl>https://raw.githubusercontent.com/ButchersBoy/Dragablz/master/LICENSE</PackageLicenseUrl>
+    <PackageProjectUrl>http://dragablz.net</PackageProjectUrl>
+    <PackageReleaseNotes>We are in alpha right now!.</PackageReleaseNotes>
+    <PackageTags>WPF TabControl Tab Tearable</PackageTags>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <OutputPath>..\bin\Debug_net45\</OutputPath>
+    <DefineConstants>TRACE;DEBUG;NET45</DefineConstants>
+    <DocumentationFile>..\bin\Debug_net45\Dragablz.XML</DocumentationFile>
+  </PropertyGroup>
+
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <OutputPath>..\bin\Release_net45\</OutputPath>
+    <DefineConstants>TRACE;NET45</DefineConstants>
+    <DocumentationFile>..\bin\Release_net45\Dragablz.XML</DocumentationFile>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+</Project>

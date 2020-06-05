@@ -24,7 +24,7 @@ namespace DragablzDemo
 #if NET40
                 OnPropertyChanged("Header");
 #endif
-#if NET45
+#if NET45 || NETCOREAPP
                 OnPropertyChanged();
 #endif                
             }
@@ -40,7 +40,7 @@ namespace DragablzDemo
 #if NET40
                 OnPropertyChanged("IsSelected");
 #endif
-#if NET45
+#if NET45 || NETCOREAPP
                 OnPropertyChanged();
 #endif                
             }
@@ -52,7 +52,7 @@ namespace DragablzDemo
 #if NET40
         protected virtual void OnPropertyChanged(string propertyName)
 #endif
-#if NET45
+#if NET45 || NETCOREAPP
         protected virtual void OnPropertyChanged([CallerMemberName] string propertyName = null)
 #endif
         {

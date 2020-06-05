@@ -108,6 +108,7 @@
     <Compile Include="InterTabController.cs" />
     <Compile Include="ItemActionCallbackArgs.cs" />
     <Compile Include="MoveItemRequest.cs" />
+    <Compile Include="Properties\AssemblyInfo.Shared.cs" />
     <Compile Include="StackOrganiser.cs" />
     <Compile Include="StackPositionMonitor.cs" />
     <Compile Include="LocationChangedEventArgs.cs" />
